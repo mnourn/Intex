@@ -9,6 +9,27 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathLibraryTests", "MathLib
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleTest", "ConsoleTest\ConsoleTest.csproj", "{8DAEB8FA-A37B-42A3-BA68-193A4D11939B}"
 EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "MathLibraryJS", "MathLibraryJS\", "{7C3479A5-9DF1-40CC-85C8-23745C64D581}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_30399"
+		Debug.AspNetCompiler.PhysicalPath = "MathLibraryJS\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_30399\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_30399"
+		Release.AspNetCompiler.PhysicalPath = "MathLibraryJS\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_30399\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "30399"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +48,10 @@ Global
 		{8DAEB8FA-A37B-42A3-BA68-193A4D11939B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8DAEB8FA-A37B-42A3-BA68-193A4D11939B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8DAEB8FA-A37B-42A3-BA68-193A4D11939B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C3479A5-9DF1-40CC-85C8-23745C64D581}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C3479A5-9DF1-40CC-85C8-23745C64D581}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C3479A5-9DF1-40CC-85C8-23745C64D581}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C3479A5-9DF1-40CC-85C8-23745C64D581}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

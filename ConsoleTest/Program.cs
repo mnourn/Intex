@@ -8,21 +8,23 @@ namespace ConsoleTest
         static void Main(string[] args)
         {
             Console.WriteLine("Factorial Test Application");
-            Console.WriteLine("Please type number and press Enter");
+            Console.WriteLine("To exit application please type 'x' and press Enter or type number and press Enter");
             string value = Console.ReadLine();
-            int number = 0;
-            if (int.TryParse(value, out number))
+            while (value != "x")
             {
-                Nodes s = new Nodes();
-                s = s.Factorial(number);
-                Console.WriteLine(s.GetValue());
+                UInt32 number = 0;
+                if (UInt32.TryParse(value, out number))
+                {
+                    Nodes s = new Nodes();
+                    s = s.Factorial(number);
+                    Console.WriteLine(s.GetValue());
+                }
+                else
+                {
+                    Console.WriteLine("Invalid integer number");
+                }
+                value = Console.ReadLine();
             }
-            else
-            {
-                Console.WriteLine("Invalid integer number");
-            }
-            Console.WriteLine("Press Enter to Exit");
-            Console.ReadLine();
         }
     }
 }
