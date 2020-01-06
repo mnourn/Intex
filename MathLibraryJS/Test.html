@@ -4,13 +4,18 @@
     <meta charset="utf-8" />
     <script src="JS/MathLib.js"></script>
     <script>
-        function factorial() {
+        function getFactorial() {
             document.getElementById('txtFactorial').innerText = '';
             var number = document.getElementById('txtNumber').value;
             if (!isNaN(number) && number >= 1) {
-                var n = new nodes();
-                n = n.factorial(Math.floor(number));
-                document.getElementById('txtFactorial').innerText = n.getValue();
+                debugger;
+                var n = new factorial();
+                var result = n.getFactorial(Math.floor(number));
+                var s = '';
+                for (var i = result.length - 1; i >= 0; i--) {
+                    s += result[i];
+                }
+                document.getElementById('txtFactorial').innerText = s;
             }
             else {
                 document.getElementById('txtFactorial').innerText = 'Invalid number';
@@ -21,7 +26,7 @@
 </head>
 <body>
     <input type="text" id="txtNumber" />
-    <button onclick="return factorial()">x!</button>
+    <button onclick="return getFactorial()">x!</button>
     <br />
     <textarea id="txtFactorial" readonly="readonly"></textarea>
 </body>

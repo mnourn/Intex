@@ -1,5 +1,6 @@
 ﻿using MathLibrary;
 using System;
+using System.Collections.Generic;
 
 namespace ConsoleTest
 {
@@ -10,14 +11,15 @@ namespace ConsoleTest
             Console.WriteLine("Factorial Test Application");
             Console.WriteLine("To exit application please type 'x' and press Enter or type number and press Enter");
             string value = Console.ReadLine();
+            Factorial s = new Factorial();
             while (value != "x")
             {
-                UInt32 number = 0;
-                if (UInt32.TryParse(value, out number))
+                int number = 0;
+                if (int.TryParse(value, out number) && number > 0)
                 {
-                    Nodes s = new Nodes();
-                    s = s.Factorial(number);
-                    Console.WriteLine(s.GetValue());
+                    List<byte> result = s.GetFactorial(number);
+                    result.Reverse();
+                    Console.WriteLine(string.Join("", result));
                 }
                 else
                 {
